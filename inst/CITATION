@@ -1,0 +1,37 @@
+year <- sub("-.*", "", meta$Date)
+note <- sprintf("R package version %s", meta$Version)
+
+citHeader("To cite package 'difNLR' in publications use:")
+
+citEntry(entry = "Article",
+         title = "{difNLR}: Generalized logistic regression models for {DIF} and {DDF} detection.",
+         author = personList(as.person("Adela Hladka"),
+                             as.person("Patricia Martinkova")),
+         year = "2020",
+         note = "Under review",
+         journal = "The R Journal",
+         textVersion = "Hladka, A. & Martinkova, P. (2020). difNLR: Generalized logistic regression models for DIF and DDF detection. The R Journal. Under review.")
+
+citEntry(entry = "Manual",
+         title = "{difNLR}: {DIF} and {DDF} Detection by Non-Linear Regression Models.",
+         author = personList(as.person("Adela Hladka"),
+                             as.person("Patricia Martinkova")),
+         year = year,
+         note = note,
+         url = "https://CRAN.R-project.org/package=difNLR",
+         textVersion =
+         paste0("Hladka, A. & Martinkova, P. (",
+               year, "). difNLR: DIF and DDF detection by non-linear regression models. ", note,
+               "."))
+
+citEntry(entry = "Article",
+         title = "{D}etection of Differential Item Functioning with Nonlinear Regression: {A} Non-{IRT} Approach Accounting for Guessing",
+         author = personList(as.person("Adela Drabinova"), as.person("Patricia Martinkova")),
+         year = "2017",
+         journal = "Journal of Educational Measurement",
+         volume = "54",
+         number = "4",
+         pages = "498-517",
+         doi = "10.1111/jedm.12158",
+         publisher = "Wiley Online Library",
+         textVersion = "Drabinova, A. & Martinkova, P. (2017). Detection of Differential Item Functioning with Nonlinear Regression: A Non-IRT Approach Accounting for Guessing. Journal of Educational Measurement, 54(4), 498-517.")
